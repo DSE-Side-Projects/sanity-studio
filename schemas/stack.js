@@ -10,6 +10,7 @@ export default {
       name: "title",
       title: "title",
       type: "string",
+      validation: Rule => Rule.required()
     },
     {
       name: "slug",
@@ -19,6 +20,7 @@ export default {
         source: "title",
         maxLength: 100,
       },
+      validation: Rule => Rule.required()
     },
     {
       name: "languages",
@@ -34,11 +36,18 @@ export default {
           ],
         },
       ],
+      validation: Rule => Rule.required()
     },
     {
       name: "docs",
       title: "Stack Docs URL",
       type: "url",
+    },
+    {
+      name: "icon",
+      title: "Icon",
+      type: "string",
+      validation: Rule => Rule.required()
     },
     {
       name: "logo",

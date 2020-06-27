@@ -10,6 +10,7 @@ export default {
       name: "title",
       title: "Title",
       type: "string",
+      validation: Rule => Rule.required()
     },
     {
       name: "slug",
@@ -19,6 +20,7 @@ export default {
         source: "title",
         maxLength: 100,
       },
+      validation: Rule => Rule.required()
     },
     {
       name: "resources",
@@ -34,6 +36,12 @@ export default {
       name: "specs",
       title: "Specs URL",
       type: "url",
+    },
+    {
+      name: "icon",
+      title: "Icon",
+      type: "string",
+      validation: Rule => Rule.required()
     },
     {
       name: "logo",

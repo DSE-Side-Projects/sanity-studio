@@ -10,16 +10,19 @@ export default {
       name: "title",
       title: "Title",
       type: "string",
+      validation: Rule => Rule.required()
     },
     {
       name: "url",
       title: "Site URL",
       type: "url",
+      validation: Rule => Rule.required()
     },
     {
       name: "github",
       title: "Github repo",
       type: "url",
+      validation: Rule => Rule.required()
     },
     {
       name: "slug",
@@ -29,17 +32,20 @@ export default {
         source: "title",
         maxLength: 100,
       },
+      validation: Rule => Rule.required()
     },
     {
       name: "description",
       title: "Description",
       type: "blockContent",
+      validation: Rule => Rule.required().min(10).max(80)
     },
     {
       name: "technology",
       title: "Technology",
       type: "reference",
       to: [{ type: "stack" }],
+      validation: Rule => Rule.required()
     },
     {
       name: "screenshot",

@@ -10,16 +10,25 @@ export default {
       name: "title",
       title: "Title",
       type: "string",
+      validation: Rule => Rule.required()
     },
     {
       name: "button",
       title: "Deployment Button Image URL",
       type: "url",
+      validation: Rule => Rule.required()
     },
     {
       name: "deploymentUrl",
       title: "Deployment URL",
       type: "url",
+      validation: Rule => Rule.required()
+    },
+    {
+      name: "icon",
+      title: "Icon",
+      type: "string",
+      validation: Rule => Rule.required()
     },
     {
       name: "logo",
