@@ -38,12 +38,6 @@ export default {
       type: "url",
     },
     {
-      name: "icon",
-      title: "Icon",
-      type: "string",
-      validation: Rule => Rule.required()
-    },
-    {
       name: "logo",
       title: "Language Logo",
       type: "image",

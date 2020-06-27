@@ -25,12 +25,6 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      name: "icon",
-      title: "Icon",
-      type: "string",
-      validation: Rule => Rule.required()
-    },
-    {
       name: "logo",
       title: "Service Logo",
       type: "image",
