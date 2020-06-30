@@ -50,12 +50,8 @@ export default {
     {
       name: "screenshot",
       title: "Screenshot",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
+      type: "screenshot",
     },
-
     {
       name: "quickstart",
       title: "Auth0 Quickstart URL",
@@ -76,7 +72,7 @@ export default {
   preview: {
     select: {
       title: "title",
-      media: "screenshot",
+      media: "screenshot.image",
       subtitle: "technology.title",
     },
   },

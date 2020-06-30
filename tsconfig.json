@@ -1,4 +1,9 @@
 {
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true
+  },
   "include": [
     "./node_modules/@sanity/base/types/**/*.ts",
     "./**/*.ts",
