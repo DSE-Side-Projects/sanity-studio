@@ -25,7 +25,7 @@ export default {
       options: {
         list: [
           {title: 'User', value: 'user'},
-          {title: 'Serverless function', value: 'funtion'}
+          {title: 'Serverless function', value: 'function'}
         ],
       layout: 'radio'
       },
