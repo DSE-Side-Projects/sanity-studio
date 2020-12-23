@@ -14,19 +14,26 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "@sanity/google-maps-input",
-    "@sanity/vision"
+    "@sanity/vision",
+    "graph-view",
+    "vercel-deploy",
+    "url-metadata-input",
+    "asset-source-unsplash",
+    "@sanity/dashboard"
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./dashboardConfig.js"
     }
   ]
 }

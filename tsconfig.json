@@ -7,6 +7,14 @@
   "include": [
     "./node_modules/@sanity/base/types/**/*.ts",
     "./**/*.ts",
-    "./**/*.tsx"
+    "./**/*.tsx",
+    "schemas/stack.js",
+    "schemas/screenshotMetadata.js",
+    "schemas/screenshot.js",
+    "schemas/__schema.js",
+    "schemas/language.js",
+    "schemas/deployment.js",
+    "schemas/blockContent.js",
+    "schemas/app.js"
   ]
 }
